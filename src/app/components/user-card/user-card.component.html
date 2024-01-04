@@ -1,0 +1,35 @@
+<!-- <p>{{user}} </p> --> 
+
+<!-- <div>userCard</div> -->
+<div class="container">
+    <div class="card">
+        <p>Карточа Юзера {{user.id}}</p> 
+        <div class="card__top">
+            <div>Пользователь: {{user.name + ' ' + user.username}}</div>
+            <div>Проживает: {{user.address.city + ' ' + user.address.street}}</div>
+            <div>Контактные данные:</div>
+            <div>email: {{user.email}}</div>
+            <div>phone: {{user.phone}}</div>
+        </div>
+
+        
+        <div class="card__bottom">
+            <button (click)="deleteUser()" class="card__del">Удалить пользователя</button>
+            
+            
+        
+            
+            <mat-dialog-actions>
+                <button 
+                    mat-raised-button
+                    class="primary card__del"
+                    (click)="openDialog()"
+                >Change user</button>
+            </mat-dialog-actions>
+            
+        </div>
+    </div>
+</div>
+
+
+

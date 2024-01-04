@@ -1,0 +1,86 @@
+<!-- <form [formGroup]="form" (ngSubmit)="submit()">
+    <input 
+        type="text"
+        class="form__createUser"
+        placeholder="User name"
+        formControlName="userName"
+    >
+    <div *ngIf="userName.errors?.minlength && userName.touched">Please enter name more length then now  </div>
+    <input 
+        type="text"
+        class="form__createUser"
+        placeholder="Country"
+        formControlName="country"
+    >
+    <input 
+        type="text"
+        class="form__createUser"
+        placeholder="Email"
+        formControlName="email"
+    >
+    <input 
+        type="text"
+        class="form__createUser"
+        placeholder="Phone"
+        formControlName="phone"
+    >
+    <button type="submit" class="btn">Создать</button>
+</form> -->
+
+
+
+<button matDialogClose mat-icon-button style="float: right; margin: 5px;">
+    <mat-icon>close</mat-icon>    
+</button>
+<mat-dialog-content [formGroup]="form" >
+    <header>
+        <h1>Введите нового пользователя</h1>
+        
+    </header>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="Name"
+                formControlName="userName">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="City"
+                formControlName="city">
+            <mat-icon matSuffix fontIcon="home"></mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="Email" 
+                formControlName="email">
+            <mat-icon matSuffix>drafts</mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="Phone"
+                formControlName="phone">
+            <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+    </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button 
+        mat-raised-button 
+        color="primary" 
+        (click)="submit()"
+        type="submit"
+        matDialogClose>
+    Save</button>
+    <button mat-raised-button color="warn" matDialogClose>Cansel</button>
+</mat-dialog-actions>

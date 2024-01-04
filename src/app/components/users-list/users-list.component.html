@@ -1,0 +1,26 @@
+
+<mat-dialog-actions>
+  <button 
+      mat-raised-button
+      class="primary"
+      (click)="openDialog()"
+  >Добавить пользователя</button>
+</mat-dialog-actions>
+<!-- <button class="user__add" (click)="modalUserService.open()">Добавить пользователя</button> 
+<app-modal-add-user 
+    *ngIf="modalUserService.isVisible$ | async" 
+    title="Введите нового пользователя"
+>
+    <app-createUser></app-createUser>
+</app-modal-add-user> -->
+
+
+    
+<app-user-card *ngFor="let user of users$ | async" [user]="user"></app-user-card>
+    
+
+
+
+
+<!-- <a routerLink="/secondPAge" ></a>  
+    переход на другую страницу через ссылку-->

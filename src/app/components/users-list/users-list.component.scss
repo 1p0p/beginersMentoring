@@ -1,0 +1,70 @@
+.user__add{
+    position: sticky;
+    top: 15px;
+    overflow: auto;
+
+    // display: block;
+    float: right;
+    font-weight: 400;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #7486b6;;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #0b1c76;
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    // margin-top: auto; /* Прижимаем кнопку к низу карточки */
+    // margin-left: 20px;
+    // margin-bottom: 20px;
+    
+  }
+
+  .user__add:hover {
+    border: 1px solid #000000;
+    background-color: #0b1c76;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+  
+
+  // section {
+  //   display: table;
+  // }
+  
+  // .example-label {
+  //   display: table-cell;
+  //   font-size: 14px;
+  //   margin-left: 8px;
+  //   min-width: 120px;
+  // }
+  
+  // .example-button-row {
+  //   display: table-cell;
+  //   max-width: 600px;
+  // }
+  
+  // .example-button-row .mat-mdc-button-base {
+  //   margin: 8px 8px 8px 0;
+  // }
+  
+  // .example-flex-container {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  // }
+  
+  // .example-button-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   width: 120px;
+  // }
+  

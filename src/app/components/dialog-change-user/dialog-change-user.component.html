@@ -1,0 +1,55 @@
+<button matDialogClose mat-icon-button style="float: right; margin: 5px;">
+    <mat-icon>close</mat-icon>    
+</button>
+<mat-dialog-content [formGroup]="form" >
+    <header>
+        <h1>Change User</h1>
+        
+    </header>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="{{data.user.name}}"
+                formControlName="userName">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="{{data.user.address.city}}"
+                formControlName="city">
+            <mat-icon matSuffix fontIcon="home"></mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="{{data.user.email}}" 
+                formControlName="email">
+            <mat-icon matSuffix>drafts</mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input 
+                matInput 
+                placeholder="{{data.user.phone}}"
+                formControlName="phone">
+            <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+    </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button 
+        mat-raised-button 
+        color="primary" 
+        (click)="changeUser()"
+        type="submit"
+        matDialogClose>
+    Save</button>
+    <button mat-raised-button color="warn" matDialogClose>Cansel</button>
+</mat-dialog-actions>

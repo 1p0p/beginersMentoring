@@ -1,0 +1,19 @@
+.form__createUser{
+    width: 100%;
+}
+.btn{
+    display: block;
+    // width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    background-color: #3510a7;
+    border: 1px solid #15044a;
+    border-radius: 4px;
+    cursor: pointer; /* Меняем курсор при наведении */
+    transition: 0.2s;
+    margin-top: auto; /* Прижимаем кнопку к низу карточки */
+
+}
